@@ -1,0 +1,17 @@
+{
+  "name": "flight-lint-web",
+  "version": "0.0.0",
+  "dependencies": {
+    "flight": "~1.1.0",
+    "requirejs": "~2.1.5",
+    "components-bootstrap": "~3.0.0",
+    "component-knockout-passy": "~3.0.0",
+    "knockout-es5-passy": "~0.0.1",
+    "lodash": "~2.4.1",
+    "fuzzy-search": "*"
+  },
+  "devDependencies": {
+    "jasmine-flight": "*",
+    "jasmine-jquery": "*"
+  }
+}
