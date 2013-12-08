@@ -15,6 +15,7 @@ define(function (require) {
         });
 
         this.handleData = function (event, data) {
+            if (!Object.keys(data.data).length) return;
             var cachedFile = this.model.filesByName[data.name];
             var newFileObject = data;
             if (cachedFile) {
