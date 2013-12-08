@@ -1,4 +1,4 @@
-# flight-flight-lint-web
+# flight-lint-web
 
 ## Contributing to this project
 
