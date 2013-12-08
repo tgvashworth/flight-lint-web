@@ -19,8 +19,12 @@ pre {
 .search-dropdown {
     position: absolute;
     right: 30px;
-    width: 50%;
+    width: 30%;
     top: 40px;
+}
+
+.search-dropdown strong {
+    color: black;
 }
 
 #file-lint .file {

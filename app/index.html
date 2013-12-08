@@ -27,7 +27,7 @@
                 <div class="search-dropdown cloak" id="search-dropdown" data-bind="css: { cloak: false }">
                     <div class="list-group" data-bind="foreach: filteredFiles">
                         <a href="#" class="list-group-item" data-bind="attr: { href: '#' + name }">
-                            <h5 class="list-group-item-heading"><span data-bind="text: data.name || name"></span> <small data-bind="text: (data.name ? name : '')"></small></h5>
+                            <span data-bind="html: match.string"></span>
                         </a>
                     </div>
                 </div>
