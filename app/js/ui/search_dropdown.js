@@ -21,7 +21,10 @@ define(function (require) {
             if (!data.value.length) {
                 return this.model.filteredFiles = [];
             }
-            this.model.filteredFiles = this.searchArray(this.model.files, data.value).slice(0, 3);
+            this.model.filteredFiles = this.searchArray(this.model.files, data.value).slice(0, 10);
+            if (this.model.filteredFiles.length) {
+                window.location.hash = '#' + this.model.filteredFiles[0].data.name;
+            }
         };
 
         this.handleExternalClick = function () {

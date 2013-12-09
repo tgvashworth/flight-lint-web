@@ -20,14 +20,14 @@
                 <div class="navbar-text">Connects to JSON-streaming WebSocket on port <code>9876</code></div>
             </div>
             <div class="navbar-collapse collapse pos-rel">
-                <form class="navbar-form navbar-right" id="search" role="search" action="#">
+                <div class="navbar-form navbar-right" id="search" role="search">
                     <div class="form-group">
                         <input type="text" class="form-control" data-bind="value: searchText" placeholder="Search">
                     </div>
-                </form>
+                </div>
                 <div class="search-dropdown cloak" id="search-dropdown" data-bind="css: { cloak: false }">
                     <div class="list-group" data-bind="foreach: filteredFiles">
-                        <a href="#" class="list-group-item" data-bind="attr: { href: '#' + name }">
+                        <a href="#" class="js-search-file list-group-item" data-bind="attr: { href: '#' + data.name }">
                             <span data-bind="html: match.string"></span>
                         </a>
                     </div>
