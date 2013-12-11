@@ -8,7 +8,8 @@
     "component-knockout-passy": "~3.0.0",
     "knockout-es5-passy": "~0.0.1",
     "lodash": "~2.4.1",
-    "fuzzy-search": "*"
+    "fuzzy-search": "*",
+    "deep-diff": "~0.1.4"
   },
   "devDependencies": {
     "jasmine-flight": "*",

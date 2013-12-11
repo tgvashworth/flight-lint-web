@@ -10,10 +10,14 @@ requirejs.config({
         'knockout-es5' : 'bower_components/knockout-es5-passy/dist/knockout-es5',
         'knockout' : 'bower_components/component-knockout-passy/knockout',
         'fuzzy' : 'bower_components/fuzzy-search/fuzzy-min',
+        'deep-diff' : 'bower_components/deep-diff/releases/deep-diff-0.1.4.min',
     },
     shim: {
         'fuzzy': {
             exports: 'fuzzy'
+        },
+        'deep-diff': {
+            exports: 'DeepDiff'
         }
     }
 });

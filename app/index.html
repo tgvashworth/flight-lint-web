@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="/bower_components/components-bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="/bower_components/components-bootstrap/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="/bower_components/animate.css/animate.min.css">
     <link rel="stylesheet" href="/css/main.css">
   </head>
   <body>
@@ -105,6 +106,23 @@
                 </div>
 
             </article>
+        </div>
+    </div>
+
+    <div id="changelog" class="changelog cloak" data-bind="css: { cloak: false }">
+        <div class="changelog-inner" data-bind="foreach: changes">
+          <a class="change animated fadeInUp" href="#" data-bind="attr: { href: '#' + ($data.href || '') }">
+            <header>
+                <h1 data-bind="text: $data.type"></h1>
+                <h2 data-bind="text: $data.title"></h2>
+            </header>
+            <div data-bind="if: $data.subtitle">
+                <h3 class="content" data-bind="text: $data.subtitle"></h3>
+            </div>
+            <div data-bind="if: $data.about">
+                <p class="content" data-bind="text: $data.about"></p>
+            </div>
+          </a>
         </div>
     </div>
 

@@ -56,3 +56,61 @@ pre {
     border-color: #eed3d7;
     color: #b94a48;
 }
+
+.changelog {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 20%;
+    min-width: 20em;
+}
+
+.changelog-inner {
+    position: relative;
+}
+
+.change {
+    width: 100%;
+    display: block;
+    margin: 1em;
+    background: rgba(255,255,255,0.9);
+    padding: 0.5em 0.8em;
+    border: 1px solid rgba(0,0,0,.3);
+    position: relative;
+    @-webkit-animation: grow-in ease-in-out 500ms;
+}
+
+.change:hover {
+    text-decoration: none;
+}
+
+.change h1,
+.change h2,
+.change h3,
+.change p{
+    font-size: 1em;
+    margin: 0;
+}
+
+.change header {
+    overflow: hidden;
+}
+.change .content {
+    margin-top: 0.8em;
+}
+.change h1 {
+    color: black;
+    float: left;
+    width: 40%;
+}
+.change h2 {
+    width: 60%;
+    text-align: right;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.change h3 {
+    font-size: 0.8em;
+    word-wrap: break-word;
+}
