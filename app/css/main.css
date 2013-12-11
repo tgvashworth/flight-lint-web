@@ -19,9 +19,11 @@ pre {
 .search-dropdown {
     position: absolute;
     right: 30px;
-    width: 30%;
+    width: auto;
     top: 40px;
 }
+
+.search-dropdown {}
 
 .search-dropdown strong {
     color: black;

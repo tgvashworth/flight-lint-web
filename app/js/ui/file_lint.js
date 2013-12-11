@@ -4,5 +4,8 @@ define(function (require) {
     var withFileData = require('ui/with_file_data');
 
     return defineComponent(withModel, fileLint, withFileData);
-    function fileLint() {}
+    function fileLint() {
+        this.after('handleData', this.updateSummary);
+        this.updateSummary = function () {};
+    }
 });
