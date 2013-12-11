@@ -14,12 +14,13 @@ define(function (require) {
         });
 
         this.after('initialize', function () {
-            this.model.removeChange = function (index) {
-                this.model.changes.splice(index, 1);
-                return true;
-            }.bind(this);
+
+            this.on('mouseover mouseout', function () {
+                this.preventCleanup = !this.preventCleanup;
+            });
 
             setInterval(function () {
+                if (this.preventCleanup) return;
                 var out = 0;
                 while (this.model.changes[out] && (this.model.changes[out].timestamp + this.attr.timeout) < Date.now()) {
                     out++;

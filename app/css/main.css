@@ -1,5 +1,5 @@
 body {
-    padding: 80px 0;
+    padding: 50px 0;
 }
 
 .pos-rel {
@@ -32,7 +32,7 @@ pre {
 #file-lint .file {
     border-top: 1px solid #eee;
     margin-top: 20px;
-    padding: 60px 0 0;
+    padding: 60px 1em 1em;
 }
 
 .file h3 {
@@ -73,11 +73,13 @@ pre {
     width: 100%;
     display: block;
     margin: 1em;
-    background: rgba(255,255,255,0.9);
+    background: white;
+    box-shadow: 0 0 5px rgba(0,0,0,.4);
     padding: 0.5em 0.8em;
     border: 1px solid rgba(0,0,0,.3);
     position: relative;
-    @-webkit-animation: grow-in ease-in-out 500ms;
+    -webkit-animation: target-fade 3s 1;
+    -moz-animation: target-fade 3s 1;
 }
 
 .change:hover {
@@ -113,4 +115,16 @@ pre {
 .change h3 {
     font-size: 0.8em;
     word-wrap: break-word;
+}
+
+:target {
+    -webkit-animation: target-fade 3s 1;
+    -moz-animation: target-fade 3s 1;
+}
+
+@-webkit-keyframes target-fade {
+    0% { background-color: #fea; }
+}
+@-moz-keyframes target-fade {
+    0% { background-color: #fea; }
 }
